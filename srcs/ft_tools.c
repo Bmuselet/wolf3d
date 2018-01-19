@@ -27,6 +27,8 @@ static int	ft_expose_commands_bis(t_mlx *mlx)
 	mlx_string_put(mlx->mlx, mlx->win, 35, 155,
 		WHITE, "Shoot = Left click");
 	mlx_string_put(mlx->mlx, mlx->win, 35, 175, WHITE, "Sprint = Hold SHIFT");
+	mlx_string_put(mlx->mlx, mlx->win, 35, 195,
+		WHITE, "Change texture mode = TAB");
 	return (0);
 }
 
@@ -37,9 +39,9 @@ int			ft_expose_commands(t_mlx *mlx)
 
 	x = 27;
 	y = 34;
-	while (x <= 360)
+	while (x <= 345)
 		mlx_pixel_put(mlx->mlx, mlx->win, x++, y, WHITE);
-	while (y <= 200)
+	while (y <= 220)
 		mlx_pixel_put(mlx->mlx, mlx->win, x, y++, WHITE);
 	while (x >= 27)
 		mlx_pixel_put(mlx->mlx, mlx->win, x--, y, WHITE);
